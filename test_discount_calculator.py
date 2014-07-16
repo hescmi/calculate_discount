@@ -16,7 +16,7 @@ class DiscountCalculatorTests(unittest.TestCase):
     def testFullDiscount(self):
         x = {"ddis" : 100, "pdis" : 100, "price" : 100}
         find_cost = discountGen(x)
-        self.assertEqual(find_cost, 0)
+        self.assertEqual(find_cost, 1)
 
 if __name__ == "__main__":
     unittest.main()
